@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- airbus.html -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Airbus Seat Calculator</title>
+<style>
+DIV.movable { position:absolute;}
+</style>
+</head>
+ 
+<body>
+
+  <h2>Airbus Seat Calculator</h2>
+ 
+  <form id="formTest" method="get" action="processData">
+    <table>
+    
+    <tr>
+      <td><label for="txtTickets">Ticket Holders<span class="inputs"></span></label></td>
+      <td><input type="text" id="txtTickets" name="tickets"></td>
+    </tr>
+    <tr>
+      <td><label for="txtPasses">Complementary Passes<span class="inputs"></span></label></td>
+      <td><input type="text" id="txtPasses" name="passes"></td>
+    </tr>
+    
+    
+    <tr>
+      <td>&nbsp;</td>
+      <td>
+          <input type="button" value="Calculate Available Seats" id="btnSubmit"></td>
+    </tr>
+    </table>
+  </form>
+<img id="airbus" src="images/airbus.png" />
+
+<div id="results">	
+</div>
+<h2>Your Copyright Info Goes Here</h2>
+<script src="jquery-3.1.0.js"></script>
+<script src="airbus.js"></script>
+
+</body>
+</html>
